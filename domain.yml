@@ -8,7 +8,9 @@ intents:
   - mood_good
   - mood_unhappy
   - bot_challenge
-
+  - show_time
+actions:
+  - action_show_time
 responses:
   utter_greet:
   - text: "হাই, কেমন আছেন?"

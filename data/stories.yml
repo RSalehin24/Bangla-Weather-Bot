@@ -28,3 +28,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: time show path
+  steps:
+  - intent: show_time
+  - action: action_show_time

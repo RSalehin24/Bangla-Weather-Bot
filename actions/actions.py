@@ -6,11 +6,11 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
+from datetime import date, datetime
+from typing import Any, Text, Dict, List
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
 #
 #
 # class ActionHelloWorld(Action):
@@ -25,3 +25,15 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+class ActionShowTime(Action):
+
+    def name(self) -> Text:
+        return "action_show_time"
+
+    def run(self, dispatcher, tracker, domain):
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        dispatcher.utter_message(text="এখন সময় হচ্ছে: {}".format(current_time))
+
+        return []
