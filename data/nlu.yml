@@ -8,96 +8,103 @@ nlu:
     - ওহে
     - ও
     - কই
-    - আছেন নাকি?
+    - চল যাই
+    - চলেন যাই
+    - শুভ সকাল
+    - শুভ সন্ধ্যা
+    - শুভ বিকাল
 
 - intent: mood_good
   examples: |
     - আমি ভালো আছি
+    - অনেক অনেক ভালো
     - ভালো
     - সুন্দর
-#     - hey
-#     - hello
-#     - hi
-#     - hello there
-#     - good morning
-#     - good evening
-#     - moin
-#     - hey there
-#     - let's go
-#     - hey dude
-#     - goodmorning
-#     - goodevening
-#     - good afternoon
+    - খুব ভালো
+    - নিখুঁত
+    - রাজার মতো মনে হচ্ছে
+    - অনেক ভালো আছি
+    - অনেক ভালো অনুভব করছি
+    - খুব ভালো আছি
+    - খুবই ভালো আছি
+    - খুব ভালো অনুভব করছি
+    - খুবই ভালো অনুভব করছি
+    - পৃথিবীকে আমিই বাঁচাবো মনে হচ্ছে
+    - শান্তি
+    - শান্তিতে আছি
 
-# - intent: goodbye
-#   examples: |
-#     - cu
-#     - good by
-#     - cee you later
-#     - good night
-#     - bye
-#     - goodbye
-#     - have a nice day
-#     - see you around
-#     - bye bye
-#     - see you later
+- intent: goodbye
+  examples: |
+    - বিদায়
+    - ভালো থেকো
+    - ভালো থাকেন
+    - শুভ রাত্রি
+    - সুন্দর দিন কাটাও
+    - আবার দেখা হবে
+    - পরে দেখা হবে
+    - দেখা হবে
+    - থাক যাই
+    - থাকেন যাই
+    - আল্লাহ হাফেজ
 
-# - intent: affirm
-#   examples: |
-#     - yes
-#     - y
-#     - indeed
-#     - of course
-#     - that sounds good
-#     - correct
+- intent: affirm
+  examples: |
+    - হ্যা
+    - হা
+    - অবশ্যই
+    - মানলাম
+    - সঠিক
+    - সত্য
 
-# - intent: deny
-#   examples: |
-#     - no
-#     - n
-#     - never
-#     - I don't think so
-#     - don't like that
-#     - no way
-#     - not really
-
-# - intent: mood_great
-#   examples: |
-#     - perfect
-#     - great
-#     - amazing
-#     - feeling like a king
-#     - wonderful
-#     - I am feeling very good
-#     - I am great
-#     - I am amazing
-#     - I am going to save the world
-#     - super stoked
-#     - extremely good
-#     - so so perfect
-#     - so good
-#     - so perfect
-
-# - intent: mood_unhappy
-#   examples: |
-#     - my day was horrible
-#     - I am sad
-#     - I don't feel very well
-#     - I am disappointed
-#     - super sad
-#     - I'm so sad
-#     - sad
-#     - very sad
-#     - unhappy
-#     - not good
-#     - not very good
-#     - extremly sad
-#     - so saad
-#     - so sad
-
-# - intent: bot_challenge
-#   examples: |
-#     - are you a bot?
-#     - are you a human?
-#     - am I talking to a bot?
-#     - am I talking to a human?
+- intent: deny
+  examples: |
+    - না
+    - ন
+    - কখনোই না 
+    - আমার তা মনে হয় না
+    - আমার তা মনে হচ্ছে না
+    - আমার তো তা মনে হয় না
+    - আমার তো তা মনে হচ্ছে না
+    - আমার সেটা মনে হয় না
+    - আমার সেটা মনে হচ্ছে না
+    - আমার তো সেটা মনে হয় না
+    - আমার তো সেটা মনে হচ্ছে না
+    - পছন্দ হলো না
+    - আমার এটা পছন্দ হলো না
+    - আমার তো এটা পছন্দ হলো না
+    - আমার এটা পছন্দ হচ্ছে না
+    - আমার তো এটা পছন্দ হচ্ছে না
+    - কোনো মতেই না
+    - কোন মতেই না
+    - সত্যি বলতে না
+    
+- intent: mood_unhappy
+  examples: |
+    - ভালো না
+    - আজকের দিনটা ভয়ানক ছিল
+    - আজকের দিনটা ভয়ানক ছিলো
+    - মনটা খারাপ
+    - আমার মনটা খারাপ
+    - মনটা খারাপ আমার
+    - মনটা খারাপ আজকে‌
+    - আজকে মনটা খারাপতেছে
+    - খারাপ লাগতেছে
+    - খুব খারাপ লাগ
+    - ভালো লাগতেছে না
+    - ভাল লাগতেছে না
+    - আশাহত
+    - আমি আশাহত
+    - আমি খুবই আশাহত
+    - আামার এতো খারাপ লাগতেছে
+    - খুবই খারাপ লাগতেছে
+    - ভালো নেই
+    - খুব ভালো নেই
+  
+- intent: bot_challenge
+  examples: |
+    - তুমি কে?
+    - তুমি কি একটা বট?
+    - তুমি কি মানুষ?
+    - আমি কি বটের সাথে কথা বলছি?
+    - আমি কার সাথে কথা বলছি?
+    - আমি কি মানুষের সাথে কথা বলছি?

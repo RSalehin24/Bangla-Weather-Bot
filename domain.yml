@@ -2,36 +2,32 @@ version: "3.1"
 
 intents:
   - greet
+  - goodbye
+  - affirm
+  - deny
   - mood_good
-  # - goodbye
-  # - affirm
-  # - deny
-  # - mood_great
-  # - mood_unhappy
-  # - bot_challenge
+  - mood_unhappy
+  - bot_challenge
 
 responses:
   utter_greet:
-  - text: "হাই, কেমন আছো?"
+  - text: "হাই, কেমন আছেন?"
 
   utter_happy:
   - text: "শুনে ভালো লাগলো।"
 
-  # utter_cheer_up:
-  # - text: "Here is something to cheer you up:"
-  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_cheer_up:
+  - text: "আশা করি এই ছবিটা দেখে অপনার ভালো লাগবে:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  # utter_did_that_help:
-  # - text: "Did that help you?"
+  utter_did_that_help:
+  - text: "এটা কি উপকারে আসলো?"
 
-  # utter_happy:
-  # - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "শুভ বিদায়‌।"
 
-  # utter_goodbye:
-  # - text: "Bye"
-
-  # utter_iamabot:
-  # - text: "I am a bot, powered by Rasa."
+  utter_iamabot:
+  - text: "আমার নাম রাসা‌। আমি একটি বট। কিভাবে আপনাকে সাহায্য করতে পারি?"
 
 session_config:
   session_expiration_time: 60
