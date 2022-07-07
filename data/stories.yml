@@ -33,3 +33,21 @@ stories:
   steps:
   - intent: show_time
   - action: action_show_time
+
+- story: utter meaningless expression when the user does
+  steps:
+  - intent: meaningless_expressions
+  - action: utter_meaninglessexpressions
+
+- story: casual conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_good
+  - action: utter_happy
+  - intent: ask_what_bot_doing_now
+  - action: utter_whatbotdoingnow
+  - intent: ask_bot_location
+  - action: utter_location
+  - intent: goodbye
+  - action: utter_goodbye_casual
