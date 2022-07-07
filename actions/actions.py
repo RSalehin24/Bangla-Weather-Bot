@@ -67,9 +67,10 @@ class ActionRainStatus(Action):
 class ActionWeatherData(Action): 
     def name(self) -> Text:
         return "action_weather_data"
-    def run(self, dispatcher, treacker, domain):
+    def run(self, dispatcher, tracker, domain):
         url = "https://weatherapi-com.p.rapidapi.com/forecast.json"
 
-        querystring = {"q":"<REQUIRED>","days":"3"}
+        city = tracker.get_slot("city")
+        querystring = {"q":city,"days":"3"}
 
         return []

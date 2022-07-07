@@ -16,9 +16,21 @@ intents:
   - ask_rain_situation
   - meaningless_expressions
 
+entities:
+  - city
+
+slot: 
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: city
+
 actions:
   - action_show_time
   - action_rain_status
+  - action_weather_data
 
 responses:
   utter_greet:
