@@ -37,12 +37,8 @@ rules:
   - intent: nlu_fallback
   - action: utter_please_rephrase
 
-- rule: Always give rain status when the user asks
-  steps: 
-  - intent: ask_rain_situation
-  - action: action_rain_status
-
 - rule: Always give the location when the user asks
   steps:
   - intent: ask_bot_location
   - action: utter_location
+

@@ -51,3 +51,40 @@ stories:
   - action: utter_location
   - intent: goodbye
   - action: utter_goodbye_casual
+
+- story: weather info
+  steps:
+  - intent: get_weather_info
+  - action: city_name_form
+  - active_loop: city_name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_weather_data
+
+- story: rain status
+  steps: 
+  - intent: ask_rain_situation
+  - action: city_name_form
+  - active_loop: city_name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_rain_status
+
+- story: air quality
+  steps:
+  - intent: air_quality
+  - action: city_name_form
+  - active_loop: city_name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_air_quality
+
+# - story: changing city name
+#   steps:
+#   - intent: reset_city_name
+#   - action: utter_ask_city
+#   - intent: provide_city_name
+#   - action: utter_city_name_changed

@@ -246,7 +246,7 @@ nlu:
     - আহা
     - আহাহ্
     - ওহ
-    - ওহ্x
+    - ওহ্
     - ওহো
     - ওহহহহ
     - ওওওহ
@@ -254,4 +254,36 @@ nlu:
 
 - intent: get_weather_info
   examples: |
-    - 
+    - ১। [আবহাওয়া](weather_info_type)
+    - ২। [তাপমাত্রা](weather_info_type)
+    - ৩। [আকাশের অবস্থা](weather_info_type)
+    - ৪। [বৃষ্টিপাত](weather_info_type)
+    - ৫। [বায়ুবেগ](weather_info_type)
+
+- intent: provide_city_name
+  examples: |
+    - ১। [খুলনা‌](city)
+    - ২। [চট্টগ্রাম](city)
+    - ৩। [ঢাকা](city)
+    - ৪। [বরিশাল](city)
+    - ৫। [রাজশাহী](city)
+    - ৬। [রংপুর](city)
+    - ৭। [ময়মনসিংহ](city)
+    - ৮। [সিলেট](city)
+
+- intent: air_quality
+  examples: |
+    - বায়ু দূষণের পরিমাণ
+    - বায়ুর গুনগত মান
+    - বায়ুর AQI
+    - AQI
+    - একিউআই
+    - বায়ুর একিউআই
+
+# - intent: reset_city_name
+#   examples: |
+#     - শহরের নাম পরিবর্তন 
+#     - শহরের নাম কিভাবে পরিবর্তন করতে পারি?
+#     - শহরের নাম পরিবর্তন করতে চাই
+#     - শহরের নাম কিভাবে পরিবর্তন করা যেতে পারে?
+#     - অন্য শহরের [আবহাওয়া](weather_info_type) দেখতে চাই
