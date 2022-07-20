@@ -1,4 +1,3 @@
-"""
 ## Custom Component
 In Rasa the filestructure is very important to make any changes in it  default config or add something new. That's why it is very important to checkout the virtual environment's lib where the "rasa/" module is saved. Checkout the below article to get an idea of the structure:
 
@@ -11,4 +10,3 @@ Add the custom component to default_components.py file in dir "rasa/engine/recip
 
 ## CommandLine Interface
 Using an UI is important for checking the chatbot converation as the terminal or commandline doesn't support bangla font correctly. No fix has been found or not likely to be found.
-"""
