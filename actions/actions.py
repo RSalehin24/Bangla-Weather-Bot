@@ -1,11 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
 import requests
 import json
 
@@ -74,7 +66,6 @@ class ActionWeatherData(Action):
         return "action_weather_data"
     def run(self, dispatcher, tracker, domain):
         city_name = tracker.get_slot("city")
-
         city = getCity(city_name)
         json_response = getWeather(city)
         today = json_response['forecast']['forecastday'][0]
@@ -102,7 +93,7 @@ class ActionWeatherData(Action):
         elif get_info_type == "বৃষ্টিপাত":
             dispatcher.utter_message(text="আজকের বৃষ্টিপাত: \nআর্দ্রতা: {}%\nবৃষ্টি সম্ভাবনা: {}%\nবৃষ্টিপাত: {}mm".format(avg_humidity, rain_chance, total_precipitation))   
         elif get_info_type == "বায়ুবেগ":
-            dispatcher.utter_message(text="আজকের বায়ুবেগ: \nবাতাসের সর্বোচ্চ গতিবেগ: {}km/h".format(sunrise, sunset, max_temp, min_temp, avg_humidity, rain_chance, total_precipitation, weather_condition, max_wind_speed))   
+            dispatcher.utter_message(text="আজকের বায়ুবেগ: \nবাতাসের সর্বোচ্চ গতিবেগ: {}km/h".format(max_wind_speed))   
         
         # dispatcher.utter_message(template="utter_weather_info_type")
         return []

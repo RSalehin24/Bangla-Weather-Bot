@@ -2,3 +2,6 @@
 models/
 actions/__pycache__
 story_graph.dot
+results/
+model/
+train_test_split/
